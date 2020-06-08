@@ -1,0 +1,959 @@
+﻿body {
+margin:0;
+padding:0;
+background: rgb(245, 214, 156);
+
+}
+h1  { 
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+a {
+    color: rgb(107, 15, 15);
+    text-decoration: none;
+}
+
+p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    background: white;
+    min-height: 400px;
+    box-sizing: border-box;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+
+/*НАВІГАЦІЯ*/
+
+nav {
+    width:100%;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+  }
+  nav ul {
+    width:100%;
+    margin:20px 0 0;
+    padding:0;
+    
+    background-color:brown;
+   
+  }
+  nav ul > li{
+    position:relative;
+    display:inline-block;
+    list-style:none;
+    transition:.3s;
+  }
+   nav a {
+    outline: none;
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px 30px;
+  }
+  .active ,
+  nav ul li:hover {
+    background-color:orange;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    width: 104%;
+    z-index: 10;
+    border-radius:0px;
+    margin:0;
+    padding:0;
+  }
+  .submenu li{
+    text-align:center;
+    display:block;
+  }
+  nav .submenu {
+    display: none;
+    background: brown; 
+  }
+  nav ul li:hover .submenu {
+    display: block; 
+  }
+  
+  
+  
+  
+  
+  @media (max-width:1024px){
+    .container{
+      width:85%;
+    margin: 0 auto;
+    }
+    nav ul li {
+      display:block;
+    }
+    .submenu {
+      position:relative;
+      width:100%;
+      left:0;
+      background-color:wheat;
+    }
+    .submenu li{
+      background-color:wheat;
+    }
+    .submenu li a{
+      color:brown;
+    }
+  }
+
+
+
+.col-7 {
+    width: 70%;
+    min-height: 400px;
+    float: left;
+    
+}
+.col-3 {
+    
+    width: 27%;
+    min-height: 500px;
+    background-color: brown;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 0px;
+    
+}
+.margin-top20px {
+    margin-top: 50px;
+}
+
+
+
+/*РЕЦЕПТИ*/
+
+.post {
+    background:rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(165, 42, 42, 0.445);
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+.post img {
+    max-width: 96%;
+    padding: 7px;
+    float: left;   
+}
+.post p {
+    font-size: 20px;
+}
+
+                                  /*Кнопки читати далі*/
+
+.button1 , .button5, .button6  {
+    
+    padding-left: 60%;
+    margin-bottom: 2%; 
+}
+.button2 , .button3 , .button4 {
+    
+    margin-bottom: 2%; 
+}
+.button7 , .button8 , .button9 , .button10 {
+    
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.button1 a , .button2 a , .button3 a , .button4 a , .button5 a, .button6 a,
+.button7 a , .button8 a , .button9 a , .button10 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+.button1 a:hover , .button2 a:hover , .button3 a:hover, .button4 a:hover, .button5 a:hover, .button6 a:hover,
+.button7 a:hover , .button8 a:hover , .button9 a:hover, .button10 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 800;
+    box-shadow: 5px 5px gray;
+}
+
+
+
+
+/*КУЛІНАРНІ ПОДОРОЖІ*/
+
+/*ТОСКАНА*/
+.post1 {
+    background:rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    
+}
+
+.post1 img {
+    width: 97%;
+}
+
+.post1 span a {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    letter-spacing: 5px;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(158, 71, 71, 0.733);
+    width: 97%;
+    top: 60%;
+    left: 0;
+}
+
+
+
+/*.post1 p {
+    font-size: 20px;
+    width: 95%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    
+    top: -180px;
+    text-align: left;
+}*/
+
+
+/*БУРГУНДІЯ*/
+
+.post1-1 {
+    width: 32%;
+    display: inline-block;
+    position: relative;
+    top: 10px; 
+    overflow: hidden;
+}
+
+.post1-1 img {
+    width: 100%;
+    transition: .5s;
+}
+.post1-1:hover img {
+    transform: scale(1.1);
+    }
+.post1-1 span a {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgba(158, 71, 71, 0.733);
+    width: 100%;
+    top: 60%;
+    left: 0;
+}
+
+
+
+/*БАСКОНІЯ*/
+
+
+.post1-2 {
+    width: 32%;
+    display: inline-block;
+    position: relative;
+    top: 10px; 
+    overflow: hidden;
+}
+
+.post1-2 img {
+    width: 100%;
+    transition: .5s;
+}
+.post1-2:hover img {
+    transform: scale(1.1);
+    }
+.post1-2 span a{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgba(158, 71, 71, 0.733);
+    width: 100%;
+    top: 60%;
+    left: 0;
+}
+
+
+/*БАДЕН*/
+
+.post1-3 {
+    width: 32%;
+    display: inline-block;
+    position: relative;
+    top: 10px; 
+    overflow: hidden;
+}
+
+.post1-3 img {
+    width: 100%;
+    transition: .5s;
+    
+}
+.post1-3:hover img {
+transform: scale(1.1);
+}
+.post1-3 span a {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgba(158, 71, 71, 0.733);
+    width: 100%;
+    top: 60%;
+    left: 0;
+}
+
+
+
+                                  /*ЦІКАВІ ФАКТИ ПРО ЇЖУ*/
+
+
+.post2 {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.post2 img {
+  width: 50%;
+   float: right;
+   padding: 10px;
+   /*border: 2px solid rgba(197, 30, 30, 0.486);*/
+}
+
+
+.post3 {
+    width: 100%;
+    display: block;
+    position: relative;
+    
+}
+.post3 img {
+    width: 50%;
+    position: relative;
+    float: right;
+    padding: 10px;
+    /*border: 2px solid rgba(197, 30, 30, 0.486);*/
+}
+.post3 p {
+    margin-top: 60px;
+}
+
+
+
+
+.post4 {
+    position: relative;
+    width: 100%;
+    display: block;
+    
+}
+.post4 img {
+    width: 100%;
+    
+}
+
+
+
+                                          /*ВИНО І СИР*/
+
+.post5 {
+    width: 100%;
+    border-top: 2px solid rgba(170, 168, 168, 0.473);
+}
+.post5 h1 {
+    text-align: center;
+}
+.post5 img {
+    width: 48%;
+    height: 45%;
+    float: left;
+    display: inline-block;
+    padding-right: 10px;
+}
+.post5 h3 {
+    text-align: center;
+    margin-top: -10px;
+}
+.post5 p {
+    margin-top: -15px;
+}
+
+
+.post6 {
+    width: 100%;
+    margin-top: 30px;
+    }
+.post6 img {
+    width: 48%;
+    height: 45%;
+    float: left;
+    display: block;
+    padding-right: 10px;
+}
+.post6 h3 {
+    text-align: center;
+}
+.post6 p {
+    margin-top: -15px;
+}
+
+
+
+
+                                /*БОКОВІ КОЛОНКИ*/
+
+
+h1 {
+    margin: 10px 0;
+}
+
+
+                                /*ВСЕ ПРО ...*/
+                                .col-3 {
+                                    width: 27%;
+                                    min-height: 500px;
+                                    background-color: brown;
+                                    float: right;
+                                    box-sizing: border-box;
+                                    padding: 10px;
+                                    margin-top: 20px;
+                                }
+.col-3 h1{
+    color: white;
+}
+.col-3 ul {
+    margin: 0;
+    padding: 0;
+}
+.col-3 ul li {
+    padding: 8px;
+    list-style: none;
+    border-bottom: 1px solid rgba(175, 173, 173, 0.39);
+    transition: .2s;
+}
+.col-3 ul li a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+.col-3 ul li:hover {
+    background: rgb(255, 166, 0);
+}
+
+
+                           /*КУЛІНАРНИЙ ЛАЙФХАК*/
+
+  .art1 {
+    
+    border: 2px solid rgb(141, 17, 17);
+    background-color: rgb(253, 253, 253);
+    width: 28%;
+    align-items: center;
+    height: 450px; 
+    margin-top: 20px;
+    box-sizing: border-box;
+    float: right;
+
+}
+.art1 p {
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+    
+}
+.art1 h2 {
+    color: rgb(141, 17, 17);
+}
+.art1 h2  {
+    text-align: center;
+    padding: 5px;
+    margin-top: -8px;
+}
+
+.art1 img {
+    width: 90%;
+    padding: 10px;
+    margin-top: -30px;
+}
+
+
+                               /*ШЕФ ДНЯ*/
+
+.art2 {
+    
+    float: right;
+    border: 2px solid rgb(141, 17, 17);
+    width: 28%;
+    height: 450px; 
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.art2 img {
+    width: 90%;
+    padding: 10px;
+    margin-top: -30px;
+}
+
+
+.art2 h2  {
+    text-align: center;
+    padding: 5px;
+    margin-top: -8px;
+    color: rgb(141, 17, 17);
+}
+.art2 p {
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+
+
+
+.art3 {
+    float: right;
+    width: 28%;
+     
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.art3 img {
+    width: 90%;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+.art3 h2 {
+    text-align: center;
+    padding: 5px;
+    margin-top: -8px;
+    color: rgb(141, 17, 17);
+}
+
+.news1 {
+    width: 100%;
+    height: 450px;
+    
+}
+.news1 h3  {
+    text-align: center;
+    padding: 5px;
+    margin-top: -8px;
+    color: rgb(141, 17, 17);
+}
+.news1 p {
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.news2 {
+    width: 100%;
+    margin-top: 70px;
+}
+.news2 h3  {
+    text-align: center;
+    padding: 5px;
+    margin-top: -8px;
+    color: rgb(141, 17, 17);
+}
+.news2 p {
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+                                    /*ФУТЕР*/
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+}
+
+
+
+
+@media (max-width: 1240px) {
+    .art1 {
+        height: 430px;
+    }
+}
+@media (max-width: 1024px) {
+    nav {
+        position: static;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+    .post img {
+        width: 100%;
+    }
+    .post1-1 span {
+        font-size: 23px; 
+    }
+    .post1-2 span {
+        font-size: 23px; 
+    }
+    .post1-3 span {
+        font-size: 23px; 
+    }
+    .art1{
+        height: 550px;
+        
+      }
+      .art2{
+        height: 580px;
+        margin-top: 20px;
+      }
+      .art3 h2 {
+        margin-top: 10px;
+      }
+      .news1   {       
+        margin-top: 10px;
+        }
+      .news2   {  
+        margin-top: 200px;
+        }
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+    .post p {
+        font-size: 18px;
+    }
+    .post img {
+        padding: 0px;
+    }
+    
+    .col-7,
+    .col-3 {
+        width: 100%;
+        float: none;  
+    }
+    .col-3 {
+        margin-top: 1350px;
+        
+    }
+
+    .post1 span {
+        font-size: 35px;
+        top: 75%;
+    }
+    
+    .post1-1 {
+        width: 48%;
+    }
+    
+    .post1-2 {
+        width: 48%;
+    }
+    .post1-3 {
+        width: 96%;
+    }
+    .post1-3 span {
+        font-size: 35px;
+        top: 75%;
+    }
+
+    .post2 img {
+        width: 50%;
+        
+    }
+    
+    .post3 {
+        width: 100%;
+        display: block;
+    }
+    
+    .post4 {
+        width: 100%;
+        display: block;
+    }
+    
+    .post5 img {
+        width: 45%;  
+    }
+    
+    
+    .post6 img {
+        float: right;
+        width: 45%;  
+    }
+
+    .art1 {
+        width: 100%;
+        display: block;
+        margin-top: -1980px;
+        height: 250px;
+    }
+    .art1 img {
+        width: 40%;
+        float: left;
+    }
+    .art2 {
+        width: 100%;
+        display: block;
+        margin-top: -1680px;
+        height: 250px;
+    }
+
+     .art2 img {
+        width: 45%;
+        float: left;
+    }
+
+    .art3 {
+        width: 100%;
+        display: block;
+        margin-top: -1320px;
+        
+    }
+    .news1 {
+        height: 280px;
+    }
+    .news2 {
+        height: 280px;
+    }
+    
+
+
+
+     .news1 img {
+        width: 40%;
+        float: right;
+        padding: 5px;  
+    }
+    .news2 img {
+        width: 40%;
+        float: right; 
+        top: 10px; 
+    }
+    .news2 {
+        margin-top: 20px;
+    }
+    .news2 p {
+        margin-top: 30px;
+    }
+    
+    
+   
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .post2 img {
+        width: 65%;
+    }
+    .post3 img {
+        width: 65%;
+    }
+    .post5 img {
+        width: 60%;
+    }
+    .post6 img {
+        width: 60%;  
+    }
+    .art2 img {
+        width: 45%;
+        float: left;
+    }
+    .art1 img {
+        width: 45%;
+        float: left;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+    .post2 .invisible {
+        display: none;
+    }
+    .post3 .invisible {
+        display: none;
+    } 
+}
+
+@media (max-width: 497px) {
+    .container {
+        width: 100%;
+    }
+    .post2 img {
+        width: 97%;
+    }
+    .post3 img {
+        width: 97%;
+    }
+    .post5 img {
+        width: 97%;
+    }
+    .post6 img {
+        width: 97%;  
+    }
+    .col-3 {
+        margin-top: 2250px;
+    }
+    .art1 {
+        width: 100%;
+        display: block;
+        margin-top: -2750px;
+        height: 450px;
+    }
+    .art1 img {
+        width: 97%;
+    }
+    .art2 {
+        width: 100%;
+        display: block;
+        margin-top: -2280px;
+        height: 450px;
+    }
+    .art2 img {
+        width: 97%;
+    }
+    .art3 {
+        margin-top: -1800px;
+    }
+    .news1 img {
+        width: 97%;
+    }
+    .news2 h3 {
+        margin-top: 250px;
+    }
+    .news2 img {
+        width: 97%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .post1-1 span {
+        font-size: 17px;
+    }
+    .post1-2 span {
+        font-size: 17px;
+    }
+    .post1 span {
+        top: 60%;
+    }
+}
+@media (max-width: 340px) {
+    .post1-1 span {
+        font-size: 15px;
+    }
+    .post1-2 span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px) {
+    .art1 {
+        margin-top: -2885px;
+        height: 490px;
+    }
+    .art2 {
+        margin-top: -2385px;
+        height: 510px;
+    }
+    .art3 {
+        margin-top: -1850px;  
+    }
+    .post1-1  {
+        display: block;
+        width: 96%;
+    }
+    .post1-2  {
+        display: block;
+        width: 96%;
+    }
+    .post1-1 span {
+        font-size: 20px;
+    }
+    .post1-2 span {
+        font-size: 20px;
+    }
+    .post1 span {
+        font-size: 20px;
+    }
+    .post1-3 span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 225px) {
+    .art1 {
+        margin-top: -2925px;
+        height: 490px;
+    }
+    .art2 {
+        margin-top: -2430px;
+        height: 510px;
+    }
+    .news1 .invisible2{
+        display: none;
+    }
+    .news2 .invisible2 {
+        display: none;
+    }
+    
+}
+
+

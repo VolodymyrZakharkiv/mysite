@@ -1,0 +1,688 @@
+﻿body {
+margin:0;
+padding:0;
+background: rgb(245, 214, 156);
+
+
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    min-height: 400px;
+    box-sizing: border-box;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+/*НАВІГАЦІЯ*/
+
+nav {
+    width:100%;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+  }
+  nav ul {
+    width:100%;
+    margin:20px 0 0;
+    padding:0;
+    
+    background-color:brown;
+   
+  }
+  nav ul > li{
+    position:relative;
+    display:inline-block;
+    list-style:none;
+    transition:.3s;
+  }
+   nav a {
+    outline: none;
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px 30px;
+  }
+  .active ,
+  nav ul li:hover {
+    background-color:orange;
+  }
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    width: 104%;
+    z-index: 10;
+    border-radius:0px;
+    margin:0;
+    padding:0;
+  }
+  .submenu li{
+    text-align:center;
+    display:block;
+  }
+  nav .submenu {
+    display: none;
+    background: brown; 
+  }
+  nav ul li:hover .submenu {
+    display: block; 
+  }
+
+
+
+
+
+
+
+.col-7 {
+    width: 70%;
+    min-height: 600px;
+    float: left;
+    /*display: flex;
+    /*grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-between;*/
+      
+}
+.content {
+    position: relative;
+    width: 100%;
+    margin-top:20px;
+}
+.content_header {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.content_header img {
+    width: 100%;
+    position: relative;
+}
+.content_textheader {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 20%;
+    top: 17%; 
+}
+.content_textheader h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    letter-spacing: 40px;
+    word-spacing: 40px;
+    bottom: 20px;
+    font-weight: 100;
+}
+
+
+
+/*Європейська кухня*/
+.eurofood {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.eurofood_img {
+    position: relative;
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+.eurofood img {
+    width: 100%;
+    /*float: left;
+    display: inline-block;*/
+}
+/*.eurofood_text {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 20%;
+    top: 17%; 
+}*/
+
+.euro_text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+}
+.euro_text h2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(139, 52, 52);
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+
+.eurofood p {
+    position: relative;
+    left: 10px;
+    margin: 0;
+}
+.button1 {
+    display: inline-block;
+    margin-left: 70%;
+}
+.button1 a {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+    bottom: 10px;
+    
+}
+.button1 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 700;
+    box-shadow: 3px 3px gray;
+}
+
+
+ .asianfood {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: inline-block;
+}
+.asianfood_img {
+    position: relative;
+    width: 50%;
+    float: right; 
+    display: inline-block;
+}
+.asianfood_img img {
+    width: 100%;
+}
+.asian_text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+}
+.asian_text h2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(139, 52, 52);
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+.asianfood p {
+
+    position: relative;
+}
+.button2 {
+    display: inline-block;
+    position: relative;
+    
+}
+.button2 a {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+    
+}
+.button2 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 700;
+    box-shadow: 3px 3px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+.latinafood {
+    display:inline-block;
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+.latinafood_img {
+    
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.latinafood_img img {
+    width: 100%;
+}
+.latina_text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+}
+.latina_text h2 {
+    /*display:block;*/
+    background-color: rgba(255, 255, 255, 0.897);
+    /*width: 100%;*/
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(146, 44, 44);
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+.latinafood_text {
+    width: 100%;
+    position: relative;
+    display: block;
+    
+}
+.button3 {
+    display: inline-block;
+    /*margin-left: %;*/
+}
+.button3 a {
+    width: 25%;
+    text-align: center;
+    /*display: block;*/
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+    bottom: 5px;
+    
+}
+.button3 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 700;
+    box-shadow: 3px 3px gray;
+}
+
+
+
+
+
+
+.americafood {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+}
+.america_img {
+    position: relative;
+    width: 45%;
+    float: left;
+    display: inline-block;
+}
+.america_img img {
+    width: 100%;
+}
+.america_text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+}
+.america_text h2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(139, 52, 52);
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+.america_content {
+    display: block;
+    position: relative;
+    width: 50%;
+    float: right;
+}
+.america_content p{
+    margin: 0;
+}
+
+
+.button4 {
+    position: relative;
+    display: inline-block;
+    left: 70%;
+    top: 20px;
+}
+.button4 a {
+    width: 25%;
+    text-align: center;
+    /*display: block;*/
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+.button4 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 700;
+    box-shadow: 3px 3px gray;
+}
+
+
+
+
+.africafood {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+}
+.africa_img {
+    position: relative;
+    width: 45%;
+    float: left;
+    display: inline-block;
+}
+.africa_img img {
+    width: 100%;
+}
+.africa_text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+}
+.africa_text h2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(139, 52, 52);
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+.africa_content {
+    display: block;
+    position: relative;
+    width: 50%;
+    float: right;
+}
+.africa_content p{
+    margin: 0;
+}
+
+
+.button5 {
+    position: relative;
+    display: inline-block;
+    left: 70%;
+    top: 20px;
+}
+.button5 a {
+    width: 25%;
+    text-align: center;
+    /*display: block;*/
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    background:#719a0a;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+}
+.button5 a:hover {
+    color: brown;
+    background: white;
+    border-radius: 0px;
+    border: 1px solid brown;
+    font-weight: 700;
+    box-shadow: 3px 3px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col-3 {
+    position: sticky;
+    width: 25%;
+    min-height: 500px;
+    background-color: brown;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    top: 80px;
+}
+.col-3 h1{
+    color: white;
+}
+.col-3 ul {
+    margin: 0;
+    padding: 0;
+}
+.col-3 ul li {
+    padding: 8px;
+    list-style: none;
+    border-bottom: 1px solid rgba(175, 173, 173, 0.39);
+    transition: .2s;
+}
+.col-3 ul li a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+.col-3 ul li:hover {
+    background: rgb(255, 166, 0);
+}
+
+
+
+
+@media (max-width: 1024px){
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+      .submenu {
+        position:relative;
+        width:100%;
+        left:0;
+        background-color:wheat;
+      }
+      .submenu li{
+        background-color:wheat;
+      }
+      .submenu li a{
+        color:brown;
+      }
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .container {
+        width: 100%;
+    }
+    .col-7,
+    .col-3 {
+        width: 100%;
+        float: none;  
+    }
+    .col-3 {
+        position: static;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 700px){
+.content_textheader h3{
+font-size: 50px;
+}
+}
+
+@media (max-width: 600px) {
+
+    .america_img  {
+        top: 20px;
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    
+    .america_content  {
+        position: relative;
+        display: block;
+        width: 100%;
+        left: 0;
+        top: 20px;
+    }
+    .africafood {
+        top: 30px;
+    }
+    .africa_img  {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .africa_content {
+        display: block;
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 30px;
+    }
+    .button5 , .button4 {
+        left: 0;
+    }
+    .button1 {
+        margin-left: 0;
+        top: 10px;
+    }
+}
+
+
+@media (max-width: 530px) {
+.eurofood_img {
+    width: 100%;
+    float: none;
+    display:block;
+}
+.asianfood_img {
+    width: 100%;
+    float: none; 
+    display: block;
+}
+.button1 {
+    
+    margin-top: 20px;
+}
+.content_textheader h3{
+    font-size: 35px;
+}
+.latina_text h2{
+    font-size: 15px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+}
+@media (max-width: 380px){
+    .content_textheader h3{
+        font-size: 20px;
+        background-color: rgba(128, 56, 56, 0.425);
+        letter-spacing: 3px;
+        word-spacing: 5px;
+    }
+}

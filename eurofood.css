@@ -1,0 +1,314 @@
+﻿body {
+margin:0;
+padding:0;
+background: rgb(245, 214, 156);
+
+
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    background: white;
+    /*min-height: 600px;*/
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*НАВІГАЦІЯ*/
+
+nav {
+    width:100%;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+  }
+  nav ul {
+    width:100%;
+    margin:20px 0 0;
+    padding:0;
+    background-color:brown;
+  }
+  nav ul > li{
+    position:relative;
+    display:inline-block;
+    list-style:none;
+    transition:.3s;
+  }
+   nav a {
+    outline: none;
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px 30px;
+  }
+  .active ,
+  nav ul li:hover {
+    background-color:orange;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    width: 104%;
+    z-index: 10;
+    border-radius:0px;
+    margin:0;
+    padding:0;
+    
+  }
+  .submenu li{
+    text-align:center;
+    display:block;
+  }
+  nav .submenu {
+    display: none;
+    background: brown; 
+    
+  }
+  nav ul li:hover .submenu {
+    display: block; 
+  }
+
+
+                                       /*            Хедер           */
+.head{
+      display: inline-block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.397); 
+  }
+.head_img{
+    padding: 10px 0;
+    max-width: 1300px;
+    position: relative;
+}
+.head_img img{
+    width: 100%;  
+}
+
+.head_name {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: block;
+  top:20%;
+}
+
+.head_name h2{
+  width: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.897);
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(139, 52, 52);
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  letter-spacing: 10px;
+  word-spacing: 20px;
+  line-height: 100px;
+}
+
+
+                            /*ТЕКСТ ПІД ХЕДЕРОМ*/
+
+.head_text{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main {
+  position: relative;
+  width: 400px;
+  bottom: 10px;
+}
+.main p {
+  text-align: left;
+  
+}
+.head_text1:before{
+  content: "";
+  background: url(images/about.png) no-repeat;
+  background-size: 50px 50px;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+}
+
+.head_text2:before{
+  content: "";
+  background: url(images/climate.png) no-repeat;
+  background-size: 50px 50px;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+}
+
+.head_text3:before{
+  content: "";
+  background: url(images/travel.png) no-repeat;
+  background-size: 50px 50px;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+}
+.head_text4:before{
+  content: "";
+  background: url(images/restaurant.png) no-repeat;
+  background-size: 50px 50px;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+}
+
+
+ 
+
+                                        /*  Країни   */
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.land {
+    width: 280px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    height: 370px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+.land .image {
+   padding: 5px;
+   max-width: 280px;
+   height: 250px;
+   left: 0;
+   top: 0;
+}
+.land .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_content{
+  position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.479);
+    box-sizing: border-box;
+    font-weight: 700;
+    
+}
+.image_content ul{
+  position: relative;
+  width: 80%;
+  margin-top: 5%;
+  padding-left: 7%;
+}
+.image_content ul li {
+  line-height: 25px;
+  position: relative;
+  color: rgb(102, 38, 38);
+}
+ .image:hover .image_content{
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.692);
+  
+}
+.land .land_name {
+    bottom: 20px;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+.land .land_name p {
+    color: brown;
+}
+
+
+@media (max-width:1300px){
+    .head_text {
+        width:100%;
+    }
+}
+@media (max-width:1024px){
+  nav {
+    position: static;
+}
+nav ul li {
+    display: block;
+    text-align: center;
+}
+
+.submenu {
+  position:relative;
+  width:100%;
+  left:0;
+  background-color:wheat;
+}
+.submenu li{
+  background-color:wheat;
+}
+.submenu li a{
+  color:brown;
+}
+}
+
+@media (max-width:930px) {
+  .head_text {
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width:850px) {
+  .head_name h2{
+    font-size: 30px;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    line-height: 80px;
+  }
+}
+@media (max-width:660px) {
+  .head_name h2{
+    font-size: 20px;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+    line-height: 40px;
+  }
+}
+@media (max-width:330px) {
+  .head_name h2{
+    font-size: 16px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 30px;
+  }
+}
