@@ -171,6 +171,9 @@ nav ul li a:hover {
         display: block;
         text-align: center;
     }
+    nav {
+        position:static;
+    }
 
 }
 
